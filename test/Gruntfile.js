@@ -55,9 +55,7 @@ module.exports = function (grunt) {
 		testem: {
 			src: '<%= path.test %>',
 			options: {
-		        parallel: 8,
-		        launch_in_ci: ['PhantomJS', 'Firefox', 'Chrom'],
-		        launch_in_dev: ['PhantomJS', 'Firefox', 'Chrom']
+		        launch_in_ci: [ 'Mocha' ]
 		    }
 		},
 
@@ -74,5 +72,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-testem-mincer');
 	grunt.loadNpmTasks('grunt-notify');
 
-	grunt.registerTask('default', [ 'jshint', 'jscs', 'mochaTest:test', 'mochaTest:coverage', 'testem' ] );
+	grunt.registerTask('default', [ 'jshint', 'jscs', 'mochaTest:test', 'mochaTest:coverage' ] );
 };
