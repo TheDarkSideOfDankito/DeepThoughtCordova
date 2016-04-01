@@ -1,0 +1,19 @@
+{
+	// Relaxing options
+
+	// Chai uses expressions for expects() 
+	"expr":	true,
+
+	"globals": {
+		"describe": true,
+		"require": true,
+		"it": true,
+
+		"before": true,
+		"beforeEach": true,
+		"after": true,
+		"afterEach": true,
+
+		"__dirname": true
+	}
+}

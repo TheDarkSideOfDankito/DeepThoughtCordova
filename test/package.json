@@ -1,0 +1,25 @@
+{
+  "name": "DeepThought",
+  "version": "0.0.1",
+  "description": "A Test App for developing a JavaScript continuous delivery pipeline",
+
+  "devDependencies": {
+    "grunt": "0.4.5",
+
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-notify": "0.4.5",
+
+    "jshint": "2.9.1",
+    "grunt-contrib-jshint": "1.0.0",
+
+    "chai": "3.5.0",
+    "mocha": "2.4.5",
+    "grunt-mocha-test": "0.12.7",
+
+    "jscs": "2.11.0",
+    "grunt-jscs": "2.8.0",
+
+    "sinon": "1.17.3",
+    "rewire": "2.5.1"
+  }
+}
