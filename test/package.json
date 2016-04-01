@@ -20,6 +20,9 @@
     "grunt-jscs": "2.8.0",
 
     "sinon": "1.17.3",
-    "rewire": "2.5.1"
+    "rewire": "2.5.1",
+
+    "testem": "1.6.0",
+    "grunt-testem-mincer": "0.5.18"
   }
 }

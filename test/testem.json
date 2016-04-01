@@ -1,0 +1,18 @@
+{
+  "framework": "mocha",
+  "src_files": [
+    "../www/js/**/*.js"
+  ],
+  "launchers": {
+	  "Mocha": {
+	    "command": "mocha unit/**/*.js -R tap",
+    	"protocol": "tap"
+	  }
+  },
+  "launch_in_dev": [
+    "Mocha"
+  ],
+  "launch_in_ci": [
+    "Mocha"
+  ]
+}
