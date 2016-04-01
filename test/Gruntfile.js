@@ -23,8 +23,20 @@ module.exports = function (grunt) {
 
 		mochaTest: {
 			test: {
-				src: '<%= path.test %>'
-			}
+				src: '<%= path.test %>',
+				options: {
+					reporter: 'XUnit',
+	                captureFile: 'testresults/xunit.xml'
+				}
+			},
+	        coverage: {
+				src: '<%= path.test %>', // [paths.test +  '/**/*.js']
+	            options: {
+	                reporter: 'html-cov',
+	                quiet: true,
+	                captureFile: 'testresults/coverage.html'
+	            }
+	        }
 		},
 
 		jscs: {
@@ -52,5 +64,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-jscs');
 	grunt.loadNpmTasks('grunt-notify');
 
-	grunt.registerTask('default', [ 'jshint', 'jscs', 'mochaTest:test' ] );
+	grunt.registerTask('default', [ 'jshint', 'jscs', 'mochaTest:test', 'mochaTest:coverage' ] );
 };
